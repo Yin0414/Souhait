@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rasa:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+TC:wght@200..900&family=Rasa:ital,wght@0,300..700;1,300..700&display=swap');
+
+html {
+    background-color: #eaeaea;
+    box-sizing: border-box;
+}
+
+*,*:before,*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Noto Sans, sans-serif;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Header */
+.header {
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.logo {
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.logo-img {
+    width: 300px;
+    height: auto;
+}
+
+.nav {
+    display: flex;
+    font-family: Rasa, sans-serif;
+    justify-content: center;
+    background-color: #73628a;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #eaeaea;
+    text-align: center;
+}
+
+.nav-list span {
+    display: block;
+    font-size: 12px;
+    color: #eaeaea;
+}
+
+/*Slideshow*/
+.slideshow {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.slide-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1800px;
+    height: 800px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+/* Philosophy */
+.philosophy {
+    padding: 40px 20px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.line {
+    font-size: 35px;
+    color: #73628a;
+    gap: 15px;
+}
+
+.philosophy h2 {
+    font-size: 35px;
+    color: #73628a;
+}
+.en-font{ 
+    font-family: Rasa, sans-serif; 
+} 
+.cn-font{ 
+    font-family: Noto Serif TC, sans-serif; 
+}
+
+.philosophy p {
+    font-size: 20px;
+    color: #666;
+    line-height: 160%;
+    letter-spacing: 2px;
+}
+
+.line::before,
+.line::after {
+    content: "";
+    display: inline-block;
+    width: 360px;
+    height: 1px;
+    background-color: #73628a;
+}
+
+.line::before {
+    margin-right: 10px;
+}
+
+.line::after {
+    margin-left: 10px;
+}
+
+/*Category*/
+.category {
+    padding-top: 65px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    border-top: 1.5px solid #73628a;
+    width: 1200px;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.category a img {
+    width: 200px; 
+    height: 200px;
+    border-radius: 8px; 
+    transition: transform 0.2s; 
+}
+
+.category a img:hover {
+    transform: scale(1.05); 
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #73628a;
+    color: #eaeaea;
+    margin-top: 50px;
+    letter-spacing: 2px;
+}
